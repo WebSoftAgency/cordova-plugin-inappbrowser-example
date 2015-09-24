@@ -31,8 +31,6 @@ var app = {
 
     return function(show) {
       if (show) {
-        console.log('InAppBrowser:', InAppBrowser);
-        console.log('cordova.InAppBrowser:', cordova.InAppBrowser);
         if (InAppBrowser) {
           InAppBrowser = null;
         }
@@ -41,6 +39,7 @@ var app = {
         if (InAppBrowser) {
           InAppBrowser.close();
         }
+        InAppBrowser = null;
       }
     }
   }
