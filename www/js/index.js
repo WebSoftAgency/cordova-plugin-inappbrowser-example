@@ -31,7 +31,8 @@ var app = {
 
     return function(show) {
       if (show) {
-        console.log(InAppBrowser);
+        console.log('InAppBrowser:', InAppBrowser);
+        console.log('cordova.InAppBrowser:', cordova.InAppBrowser);
         if (InAppBrowser) {
           InAppBrowser = null;
         }
